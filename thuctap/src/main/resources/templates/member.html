@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT-PLUS</title>
+    <link rel="stylesheet" th:href="@{/css/user.css}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+		     <header class="header">
+            <div class="container">
+            
+                <div class="img">
+                    <a href="">
+                        <img src="image/logo3.png" alt="Img">
+                    </a>
+                </div>
+                <div class="inner-menu">
+                    <ul>
+                        <li>
+                            <a th:href="@{/trangchu}">
+                                Trang chủ
+                            </a>
+                        </li>
+                        <li >
+                            <a href="">
+                                Khóa học online
+                            </a>
+                            <i class="fa-solid fa-chevron-down down show" id="down" ></i>
+                            <i class="fa-solid fa-chevron-up up" id="up"></i>
+                           
+                        </li>
+                       
+                    </ul>
+                    <table id="table" >
+                        <tr>
+                            <td>
+                                <a th:href="@{/lap_trinh_c++}">
+                                    Lập trình C++
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a th:href="@{/lap_trinh_python}">
+                                    Lập trình Python
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a th:href="@{/lap_trinh_java}">
+                                    Lập trình Java
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                
+               
+                <a th:href="@{/member}" class="user">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+            
+            </div>
+        </header>
+    <div class="section-one">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 ">
+                    <div class="desc">
+                        <div class="inner-box">
+                            <img src="image/f2.png" alt="">
+                            <p>Tài khoản của tôi</p>
+                            <ul class="box-one">
+                                <li><i class="fa-solid fa-file-pen"></i></li>
+                                <li> <a href=""><h1 class="acount">Thông tin cá nhân</h1></a></li>
+                            </ul>
+
+                            <ul>
+                                <li><i class="fa-brands fa-youtube"></i></li>
+                                <li>  <a href=""><h2 class="infor">Khóa học đã mua</h2></a> </li>
+                            </ul>
+                           
+                        </div>
+                        <a th:href="@{/logout}" class="button">Đăng xuất</a>
+                    </div>
+                </div>
+                <div class="col-lg-9 ">
+                    <div class="inner-right">
+                        <p>Thông tin cá nhân</p>
+                        <ul>
+                            <li class="title">Mã tài khoản</li>
+                            <li class="infor" th:text="${'CUSTOMER '+users.getId()}"></li>
+                        </ul>
+                        <ul>
+                            <li class="title">Tên</li>
+                            <li class="infor" th:text="${users.getname()}">Name</li>
+                        </ul>
+                        <ul>
+                            <li class="title">Email</li>
+                            <li class="infor" th:text="${users.getEmail()}">email</li>
+                        </ul>
+                        <ul>
+                            <li class="title">Địa chỉ</li>
+                            <li class="infor" th:text="${users.getadress()}">adress</li>
+                        </ul>
+                         <div class="btn-password"><a th:href="@{/placepassword}" >Thay đổi mật khẩu</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-eight">
+        <div class="container">
+            <div class="inner-left">
+                <h1>Cơ quan chủ quản: Công ty Cổ phần Đầu tư và Dịch vụ Giáo dục</h1>
+                <h1>Địa chỉ:</h1>
+                <h1>- Văn phòng Hà Nội: Tầng 4, Tòa nhà 25T2, Đường Nguyễn Thị Thập, Phường Trung Hoà, Quận Cầu Giấy, Hà Nội</h1>
+                <h1>- Văn phòng TP.HCM: 13M đường số 14 khu đô thị Miếu Nổi, Phường 3, Quận Bình Thạnh, TP. Hồ Chí Minh</h1>
+                <h1> Hotline: 19006933 – Email: hotro@itplus.vn</h1>
+                <h1>Chịu trách nhiệm nội dung: Lê Văn A</h1>
+                
+            </div>
+            
+        </div>
+       <div class="img">
+        <img src="image/congthuong.png" alt="img">
+       </div>
+    </div>
+     <script>
+            var up=document.querySelector("#up");
+            var down=document.querySelector("#down");
+            var table=document.querySelector("#table");
+             
+            down.onclick = function(){
+                down.classList.remove("show");
+                up.classList.add("show");
+                table.classList.add("show");
+
+            }
+            up.onclick = function(){
+                up.classList.remove("show");
+                down.classList.add("show");
+                table.classList.remove("show");
+            }
+        </script>
+</body>
+</html>

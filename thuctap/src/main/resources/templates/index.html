@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT-PLUS</title>
+    <link rel="stylesheet" th:href="@{/css/main.css}">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="inner-menu">
+                <div class="img">
+                    <a th:href="@{/}">
+                     
+                         <img th:src="@{/image/logo3.png}" />
+
+                    </a>
+                </div>
+                <ul>
+                    <li>
+                        <a th:href="@{/}">
+                        Trang chủ
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a th:href="@{/gioithieu}">
+                            Giới thiệu
+                        </a>
+                    </li>
+                    <li>
+                        <a th:href="@{/login}" class="sign-in">
+                            Đăng nhập
+                        </a>
+                    </li>
+                    <li>
+                        <a th:href="@{/register}" class="sign-up">
+                            Đăng ký
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+          </div>
+        </div>
+    </header>
+    <div class="sectiontwo">
+        <div class="text">Khởi đầu sự nghiệp mới</div>
+    </div>
+    <div class="sectionthree">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="box-head">
+                        <h2 class="inner-title">
+                            Thành viên của các tổ chức
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-lg-4 img">
+                    <img src="image/VINASA-logo-official.webp" alt="VINASA">
+                    <h3>HIỆP HỘI PHẦN MỀM VÀ
+                        <br>
+                         DỊCH VỤ CNTT VIỆT NAM</h3>
+                </div>
+                <div class="col-lg-4 img">
+                    <img src="image/VNITO-logo.webp" alt="VNITO">
+                  
+                    <h3>LIÊN MINH CÔNG NGHỆ SỐ 
+                        <br>
+                        VIỆT NAM</h3>
+                </div>
+                <div class="col-lg-4 img">
+                    <img src="image/agilead-logo.webp" alt="AGILEAD">
+                    <h3>TỔ HỢP GIÁO DỤC AGILEAD
+                        <br>
+                        GLOBAL</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sectionfour">
+        <h4>CÁC GIẢI THƯỞNG VÀ THÀNH TÍCH</h4>
+        <div class="container">
+            <div class="list">
+                <ul class="list-one">
+                    <li>
+                        <img src="image/Sao-Khue.webp" alt="Saokhue">
+                    </li>
+                    <li>
+                        <img src="image/Top-t50-thuong-hieu-vang-min.webp" alt="Top50">
+                    </li>
+                    <li>
+                        <img src="image/ISO-9001-min.webp" alt="ISO">
+                    </li>
+                    <li>
+                        <img src="image/Ban-quyen-tac-gia-min.webp" alt="Banquyen">
+                    </li>
+                    <li>
+                        <img src="image/Cuc-so-hu-tri-tue-min.webp" alt="Tritue" class="five">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="sectionfive">
+        <div class="inner-title">
+            <h1>Những vấn đề mà đang gặp phải</h1>
+            <h2>Khi tự học lập trình</h2>
+            <img src="image/section-title-shape.png" alt="shape">
+        </div>
+        <div class="inner-wrap">
+            <div class="inner-box">
+                <div class="img">
+                    <img src="image/lo-trinh.png" alt="Lotrinh">
+                </div>
+                <h2>Bạn muốn bắt đầu học lập trình nhưng không biết cần học những kiến thức nào, lộ trình ra sao cho hiệu quả</h2>
+            </div>
+            <div class="inner-box">
+                <div class="img">
+                    <img src="image/tu-duy.png" alt="tuduy">
+                </div>
+                <h2>Bạn là sinh viên IT đã từng học lập trình nhưng vẫn chưa có được nền tảng kỹ thuật lập trình vững chắc và tư duy giải quyết bài toán</h2>
+            </div>
+            <div class="inner-box">
+                <div class="img">
+                   
+                     <img th:src="@{/image/lap-trinh-vien.png}" />
+                </div>
+                <h2>Bạn là sinh viên các ngành học khác muốn theo ngành IT và muốn trở thành một lập trình viên trong tương lai</h2>
+            </div>
+            <div class="inner-box">
+               <div class="img">
+                <img src="image/kho-khan.png" alt="khokhan">
+               </div>
+                <h2>Bạn gặp khó khăn khi tự học do không có người định hướng, hướng dẫn và kèm cặp dẫn đến chán nản và dễ bỏ cuộc</h2>
+            </div> <div class="inner-box">
+                <div class="img">
+                    <img src="image/hoc-offline.png" alt="hocoff">
+                </div>
+                <h2>Điều kiện của bạn không cho phép để có thể học lập trình trực tiếp tại các trung tâm ở các thành phố</h2>
+            </div>
+        </div>
+    </div>
+    <div class="sectionsix">
+        <h3>HỌC VIÊN NÓI VỀ IT-PLUS</h3>
+        <div class="box">
+            <div class="row">
+                <div class="col-4">
+                    <div class="inner-box">
+                        <img src="image/biplus-1.png" alt="biplus">
+                        <div class="inner-desc">
+                            <img src="image/education-img.png" alt="education">
+                            <h4>Qua tìm hiểu nhiều bài báo và review từ một vài đàn anh thì mình đã chọn IT-PLUS. Đến đây cũng là lúc mình đóng cánh cửa thoải mái, tự do nhưng vô dụng và mở ra cánh cửa của tri thức, được sống thật sự, sống cho hiện tại và cho tương lai.</h4>
+                            <p>Trần Nhật Anh</p>
+                            <i>Java Developer, BiPlus</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                   <div class="inner-box">
+                        <img src="image/Icon_AgileTech-Logo.png" alt="Icon">
+                        <div class="inner-desc">
+                            <img src="image/education-img.png" alt="education">
+                            <h4>Quyết định vào IT-PLUS học lập trình là một quyết định sáng suốt nhất của tớ sau khi tốt nghiệp đại học. IT-PLUS như ngôi nhà thứ hai, nơi tớ chiến thắng nỗi sợ lập trình. Các giảng viên không chỉ đáng yêu mà còn nhiệt huyết nữa.</h4>
+                            <p>Lê Thị Ngọc Huyền</p>
+                            <i>Java Developer, AgileTech</i>
+                        </div>
+                   </div>
+                   
+                </div>
+                <div class="col-4">
+                    <div class="inner-box">
+                      
+                        <img th:src="@{/image/Logo_TTC.png}" />
+                        <div class="inner-desc">
+                            <img src="image/education-img.png" alt="education">
+                            <h4>IT-PLUS – Bệ đỡ hoàn hảo để bắt đầu nghề lập trình: Nếu bạn đặt mục tiêu học để đi làm, xác định cho mình tâm lý nghiêm túc và chuẩn bị một tâm trí vững vàng, IT-PLUS sẽ là bệ đỡ cho bạn để bắt đầu theo đuổi nghề lập trình viên.</h4>
+                            <p>Đỗ Đức Than</p>
+                            <i>PHP Dev, TTC-Solutions</i>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </div>
+    </div>
+    <div class="sectionseven">
+        <h5>CỰU HỌC VIÊN CỦA IT-PLUS ĐANG LÀM VIỆC Ở ĐÂU?</h5>
+        <div class="container">
+            <div class="img">
+                <div class="row">
+                    <div class="col-4 img">
+                        <img src="image/VELA-1.png" alt="Vela">
+                        <img src="image/stringee.png" alt="">
+                        <img src="image/FPT_Software_Logo-1.png" alt="">
+                    </div>
+                    <div class="col-4 img">
+                        <img src="image/NTQ.png" alt="Vela">
+                        <img src="image/LDCC.png" alt="">
+                        <img src="image/nexttech.png" alt="">
+                    </div>
+                    <div class="col-4 img">
+                        <img src="image/NAL.png" alt="Vela">
+                        <img src="image/Codelovers.png" alt="">
+                        <img src="image/bss-group.png" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-eight">
+        <div class="container">
+            <div class="inner-left">
+                <h1>Cơ quan chủ quản: Công ty Cổ phần Đầu tư và Dịch vụ Giáo dục</h1>
+                <h1>Địa chỉ:</h1>
+                <h1>- Văn phòng Hà Nội: Tầng 4, Tòa nhà 25T2, Đường Nguyễn Thị Thập, Phường Trung Hoà, Quận Cầu Giấy, Hà Nộ</h1>
+                <h1>- Văn phòng TP.HCM: 13M đường số 14 khu đô thị Miếu Nổi, Phường 3, Quận Bình Thạnh, TP. Hồ Chí Minh</h1>
+                <h1> Hotline: 19006933 – Email: hotro@itplus.vn</h1>
+                <h1>Chịu trách nhiệm nội dung: Lê Văn A</h1>
+                
+            </div>
+            
+        </div>
+       <div class="img">
+        <img src="image/congthuong.png" alt="img">
+       </div>
+    </div>
+</body>
+</html>
+
+

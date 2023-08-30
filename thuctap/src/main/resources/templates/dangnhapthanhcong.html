@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="cha" class="container">
+        
+        <ul>
+            <li >
+                <p id="the1" >bai1</p>
+                <iframe src="https://drive.google.com/file/d/1_6GfRBZUFPvvL-qU_aRY35Q3JkjpnmFX/preview" width="640" height="480" allow="autoplay" class="video" id="bai1"></iframe>
+            </li>
+            <li class="">
+                <p id="the2">bai2</p>
+                <iframe src="https://drive.google.com/file/d/1dIFojnOcL6V0q-i12U15E49woWB0qNNV/preview" width="640" height="480" allow="autoplay" class="video " id="bai2"></iframe>
+                
+            </li>
+        </ul>
+    </div>
+   
+    
+</body>
+<style>
+    .container p{
+
+        color: #212529;
+    }
+    .container p:hover{
+        cursor: pointer;
+    }
+    .container ul li {
+        list-style: none;
+    }
+    .text{
+        display: none;
+    }
+    .video{
+        display: none;
+    }
+   .box{
+   
+    position: relative;
+    background-color: rgb(30, 28, 28);
+    padding: 25px 250px 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+   }
+    .show{
+        display: block;
+      
+    }
+</style>
+
+<script>
+    var cha= document.querySelector("#cha");
+    var the1= document.querySelector("#the1");
+    var bai1= document.querySelector("#bai1");
+    
+    the1.onclick = function(){
+        cha.classList.add("box");
+        the1.classList.add("text");
+        bai1.classList.add("show");
+    }
+    var the2= document.querySelector("#the2");
+    the2.onclick = function(){
+        cha.classList.add("box");
+        the2.classList.add("text");
+        bai2.classList.add("show");
+    }
+
+</script>
+</html>
+</html>

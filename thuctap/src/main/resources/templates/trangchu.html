@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IT-PLUS</title>
+        <link rel="stylesheet" th:href="@{/css/trangchu.css}">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+            
+                <div class="img">
+                    <a href="">
+                        <img th:src="@{/image/logo3.png}" alt="Img">
+                    </a>
+                </div>
+                <div class="inner-menu">
+                    <ul>
+                        <li>
+                            <a th:href="@{/}" class="trangchu">
+                                Trang chủ
+                            </a>
+                        </li>
+                        <li >
+                            <a href="">
+                                Khóa học online
+                            </a>
+                            <i class="fa-solid fa-chevron-down down show" id="down" ></i>
+                            <i class="fa-solid fa-chevron-up up" id="up"></i>
+                           
+                        </li>
+                       
+                    </ul>
+                    <table id="table" >
+                        <tr>
+                            <td>
+                                <a th:href="@{/lap_trinh_c++}">
+                                    Lập trình C++
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a th:href="@{/lap_trinh_python}">
+                                    Lập trình Python
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a th:href="@{/lap_trinh_java}">
+                                    Lập trình Java
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                
+               
+                <a th:href="@{/member}" class="user">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+            
+            </div>
+        </header>
+        <div class="section-one">
+            <div class="container">
+                <h1>Về chúng tôi</h1>
+                <p>IT-PLUS là một đội nhóm gồm các lập trình viên , sinh viên Công nghệ thông tin đang làm việc ở nhiều lĩnh vực khác nhau nhưng có chung niềm đam mê với giảng dạy và chia sẻ kiến thức.IT-PLUS luôn cố gắng đổi mới , trau dồi kỹ năng , đón nhận những đóng góp, khắc phục những điểm chưa tốt để mang tới cho các bạn học viên những khóa học chất lượng nhất.</p>
+                <div class="box">
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="image/people.jpg" alt="" class="anh1">
+                        </div>
+                        <div class="col-3">
+                            <img src="image/people1.jpg" alt="" class="anh2">
+                            <img src="image/people3.jpg" alt="" class="anh3">
+                        </div>
+                        <div class="col-6">
+                            <div class="inner-right">
+                                <h1>Chào mừng bạn đến với IT-PLUS</h1>
+                                <p>IT-PLUS là đơn vị cung cấp những khóa học chất lượng cao về lập trình với mục tiêu lớn nhất là giúp các bạn sinh viên IT phát triển kiến thức , phát triển sự nghiệp.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="section-two">
+            <div class="container">
+                <div class="box">
+                  <h1>Mục tiêu của đội ngũ IT-PLUS</h1>
+                  <div class="desc">
+                        <div class="row">
+                            <div class="col-3 inner-box">
+                                <img src="image/kho-khan.png" alt="" >
+                                <h2>Xây dựng cộng đồng</h2>
+                                <p>IT-PLUS mong muốn giúp đỡ các bạn sinh viên , các lập trình viên bước vào nghành IT trở thành lập trình viên giỏi.</p>
+                            </div>
+                            <div class="col-3 inner-box">
+                                <img src="image/bat-dau.png" alt="">
+                                <h2>Nâng cao chất lượng</h2>
+                                <p>Đội ngũ IT-PLUS không ngừng cải thiện trình độ, thái độ, kỹ năng sưu phạm để từ đó nâng cao chất lượng các khóa học ở hiện tại và tương lai.</p>
+                            </div>
+                            <div class="col-3 inner-box">
+                                <img src="image/lap-trinh-vien.png" alt="">
+                                <h2>Website chấm bài tự động</h2>
+                                <p>Hiện nay IT-PLUS sử dụng 2 trang chấm bài chính là Hackerrank và codeforces , trong tương lai đội ngũ sẽ xây dựng trang chấm bài riêng.</p>
+                            </div>
+                           
+                        </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-three">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="inner-left">
+                            <h1>Học tập mọi lúc, mọi nơi</h1>
+                            <p>Những cam kết về khóa học của IT-PLUS</p>
+                            <a th:href="@{/register}">Đăng kí ngay</a>
+                        </div>  
+                    </div>
+                    <div class="col-6">
+                        <div class="inner-right">
+                            <img src="image/education-img.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-four">
+            <div class="container">
+                <div class="box">
+                    <h1>Tại sao bạn nên học với IT-PLUS</h1>
+                    <div class="desc">
+                        <div class="row">
+                            <div class="col-3 inner-box">
+                                <i class="fa-solid fa-user-graduate"></i>
+                                <h2>01. Chất lượng nâng cao</h2>
+                                <p>Nội dung của khóa học đầu tư cả chất và lượng , giáo viên có kinh nghiệm và cực kì tâm huyết với công việc giảng dạy. Các khóa học về lập trình của IT-PLUS có số bài tập vô cùng đa dạng và được chấm bài tự động trên nền tảng Hackkerrank.</p>
+                            </div>
+                            <div class="col-3 inner-box">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <h2>02. Cung cấp nhiều kỹ năng quan trọng</h2>
+                                <p>Khi bạn học ngôn ngữ lập trình C++ bạn không chỉ đơn thuần học ngôn ngữ lập trình C++ mà còn học kỹ thuật lập trình , tư duy logic, cách giả quyết bài toán . Những ký năng sẽ theo bạn mãi trong khi học tập và công việc sau này.</p>
+                            </div>
+                            <div class="col-3 inner-box">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <h2>03. Bước chuẩn bị vững chắc của một lập trình viên</h2>
+                                <p>Kỹ thuật lập trình là kỹ thuật đầu tiên mà bạn phải học khi bạn muốn trở thành lập trình viên , việc học tốt kỹ thuật lập trình sẽ là bước đệm vững chắc cho sự nghiệp của bạn sau này.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-eight">
+            <div class="container">
+                <div class="inner-left">
+                    <h1>Cơ quan chủ quản: Công ty Cổ phần Đầu tư và Dịch vụ Giáo dục</h1>
+                    <h1>Địa chỉ:</h1>
+                    <h1>- Văn phòng Hà Nội: Tầng 4, Tòa nhà 25T2, Đường Nguyễn Thị Thập, Phường Trung Hoà, Quận Cầu Giấy, Hà Nộ</h1>
+                    <h1>- Văn phòng TP.HCM: 13M đường số 14 khu đô thị Miếu Nổi, Phường 3, Quận Bình Thạnh, TP. Hồ Chí Minh</h1>
+                    <h1> Hotline: 19006933 – Email: hotro@itplus.vn</h1>
+                    <h1>Chịu trách nhiệm nội dung: Lê Văn A</h1>
+                    
+                </div>
+                
+            </div>
+           <div class="img">
+            <img src="image/congthuong.png" alt="img">
+           </div>
+        </div>
+         <script>
+            var up=document.querySelector("#up");
+            var down=document.querySelector("#down");
+            var table=document.querySelector("#table");
+             
+            down.onclick = function(){
+                down.classList.remove("show");
+                up.classList.add("show");
+                table.classList.add("show");
+
+            }
+            up.onclick = function(){
+                up.classList.remove("show");
+                down.classList.add("show");
+                table.classList.remove("show");
+            }
+        </script>
+    </body>
+</html>

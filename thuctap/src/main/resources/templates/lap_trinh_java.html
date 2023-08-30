@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IT-PLUS</title>
+        <link rel="stylesheet" th:href="@{/css/lap_trinh_c++.css}">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+            
+                <div class="img">
+                    <a href="">
+                        <img src="image/logo3.png" alt="Img">
+                    </a>
+                </div>
+                <div class="inner-menu">
+                    <ul>
+                        <li>
+                            <a th:href="@{/trangchu}">
+                                Trang chủ
+                            </a>
+                        </li>
+                        <li >
+                            <a href="">
+                                Khóa học online
+                            </a>
+                            <i class="fa-solid fa-chevron-down down show" id="down" ></i>
+                            <i class="fa-solid fa-chevron-up up" id="up"></i>
+                           
+                        </li>
+                       
+                    </ul>
+                    <table id="table" >
+                        <tr>
+                            <td>
+                                <a th:href="@{lap_trinh_c++}">
+                                    Lập trình C++
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a th:href="@{/lap_trinh_python}">
+                                    Lập trình Python
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a th:href="@{/lap_trinh_java}">
+                                    Lập trình Java
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                
+               
+                <a th:href="@{/member}" class="user">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+            
+            </div>
+        </header>
+        <div class="section-one">
+            <div class="container">
+                <div class="inner-box">
+                    <div class="row">
+                        <div class="col-lg-7">
+                        <div class="inner-left">
+                                <p>Khóa học : Lập trình Java-SQL</p>
+                                <h1>Giảng viên : Lê Văn B</h1>
+                                <img src="image/java.png" alt="Java">
+                        </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="inner-right">
+                                <ul>
+                                    <li class="title">Giá gốc:</li>
+                                    <li class="desc">4.000.000đ</li>
+                                </ul>
+                                <ul>
+                                    <li class="title">Giá ưu đãi:</li>
+                                    <li class="desc">2.500.000đ (Giảm tới 40%)</li>
+                                </ul>
+                            
+                                <ul>
+                                    <li class="title">Ngày khai giảng:</li>
+                                    <li class="desc">30/4/2023</li>
+                                </ul>
+                                <a href="" class="button">Đăng kí ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-two">
+            <div class="container">
+                <div class="inner-box">
+                    <span>Mục tiêu khóa học</span>
+                    <h1><img src="image/section-title-shape.png" alt=""></h1>
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="image/event-img-5.png" alt="img">
+                        </div>
+                        <div class="col-3">
+                            <div class="box-top">
+                                <img src="image/java (1).png" alt="">
+                                <h1>Trang bị đầy đủ kiến thức về ngôn ngữ Java và SQL</h1>
+                                <p>Khóa học được thiết kế để bao quát những kiến thức về ngôn ngữ lập trình Java và ngôn ngữ truy vấn SQL.</p>
+                            </div>
+                            <div class="box-bottom">
+                                <img src="image/thanh-thao.png" alt="">
+                                <h1>Áp dụng kiến thức được học vào thực tế</h1>
+                                <p>Với kiến thức về Java và SQL được trang bị, học viên có thể tự xây dựng cho mình các sản phẩm có tính ứng dụng cao.</p>
+                            </div>
+
+                        </div>
+                        <div class="col-3">
+                            <div class="box-top">
+                                <img src="image/tu-duy.png" alt="">
+                                <h1>Cải thiện kỹ năng lập trình</h1>
+                                <p>Các bài tập và contest được chuẩn bị kỹ lưỡng, có chiều sâu giúp cải thiện đáng kể khả năng code của học viên.</p>
+                            </div>
+                            <div class="box-bottom">
+                                <img src="image/thuat-toan.png" alt="">
+
+                                <h1>Nâng cao tư duy logic và khả năng giải quyết vấn đề</h1>
+                                <p>Tư duy logic và khả năng phân tích thiết kế thuật toán cho vấn đề bạn gặp phải là rất cần thiết. Khi học ngôn ngữ Java cũng không ngoại lệ, kỹ năng này sẽ được xây dựng, cải thiện dần thông qua các contest và bài tập.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-three">
+            <div class="container">
+                <div class="inner-box">
+                    <h1>Kết quả đạt được sau khi bạn</h1>
+                    <h2>Hoàn thành khóa học</h2>
+                    <ul>
+                        <li>
+                            <div class="row">
+                                <div class="col-4 d-flex">
+                                    <div class="box-top">
+                                        <img src="image/java (1).png" alt="">
+                                        <h1>Thành thạo ngôn ngữ lập trình Java</h1>
+                                        <p>Thông qua quá trình rèn luyện trong khóa học, các học viên sẽ sử dụng thuần thục và nắm vững các kiến thức về ngôn ngữ lập trình Java.</p>
+                                    </div>
+                                </div>
+                                <div class="col-4 d-flex">
+                                    <div class="box-top">
+                                        <img src="image/kien-thuc.png" alt="">
+                                        <h1>Nền tảng kỹ thuật lập trình vững chắc</h1>
+                                        <p>Khóa học được xây dựng từ cơ bản tới nâng cao, vì thế nó phù hợp với các bạn chưa có kiến thức về lập trình cũng như các bạn mà kỹ thuật lập trình còn chưa vững.</p>
+                                    </div>
+                                </div>
+                                <div class="col-4 d-flex">
+                                    <div class="box-top">
+                                        <img src="image/thuat-toan.png" alt="">
+                                        <h1>Nắm vững Lập trình hướng đối tượng (OOP)</h1>
+                                        <p>Với kỹ thuật lập trình được trang bị ở giai đoạn đầu của khóa học, các học viên có thể nhanh chóng tiếp cận và nghiên cứu về OOP, từ đó nắm vững lý thuyết và ứng dụng kỹ thuật này vào giải quyết bài toán thực tế.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-4 d-flex">
+                                    <div class="box-bottom">
+                                        <img src="image/thanh-thao.png" alt="">
+                                        <h1>Tư duy logic và khả năng giải quyết bài toán</h1>
+                                        <p>Mặc dù không phải là khóa học về kỹ thuật lập trình, nhưng chúng tôi vẫn mong muốn góp phần bổ sung thêm tư duy logic và thuật toán cho học viên.</p>
+                                    </div>
+                                </div>
+                                <div class="col-4 d-flex">
+                                    <div class="box-bottom">
+                                        <img src="image/sql.png" alt="">
+                                        <h1>Thành thạo ngôn ngữ truy vấn mang tính cấu trúc SQL</h1>
+                                        <p>Việc truy vấn cơ sở dữ liệu thông qua ngôn ngữ SQL là một kỹ năng quan trọng mà bất kỳ một lập trình viên nào cũng cần phải nắm vững.</p>
+                                    </div>
+                                </div>
+                                <div class="col-4 d-flex">
+                                    <div class="box-bottom">
+                                        <img src="image/kinh-nghiem.png" alt="">
+                                        <h1>Xây dựng các ứng dụng desktop đơn giản</h1>
+                                        <p>Thông qua sự kết hợp của ngôn ngữ lập trình Java và hệ quản trị cơ sở dữ liệu SQL Server, học viên có thể xây dựng cho mình các ứng dụng thực tế.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="section-four">
+            <div class="container">
+                <div class="inner-box">
+                    <h1>Đối tượng có thể tham gia khóa học</h1>
+                    <ul>
+                        <li>
+                            <img src="image/bat-dau.png" alt="">
+                            <p>Bạn chưa biết gì về lập trình mong muốn bắt đầu học lập trình bằng ngôn ngữ Java và học truy vấn cơ sở dữ liệu với ngôn ngữ SQL.</p>
+                        </li>
+                        <li>
+                            <img src="image/lap-trinh-vien.png" alt="">
+                            <p>Bạn chuyển ngành sang học Công nghệ thông tin và mong muốn học Java và Cơ sở dữ liệu để có thể tìm được một công việc trong ngành IT.</p>
+                        </li>
+                        <li>
+                            <img src="image/kien-thuc.png" alt="">
+                            <p>Bạn là sinh viên đã từng học lập trình nhưng vẫn chưa có kiến thức lập trình vững chắc, kiến thức về lập trình Hướng đối tượng, hoặc chưa biết truy vấn cơ sở dữ liệu với SQL.</p>
+                        </li>
+                        <li>
+                            <img src="image/hoc-sinh.png" alt="">
+                            <p>Các bạn mong muốn sử dụng ngôn ngữ lập trình Java làm ngôn ngữ chính cho công việc sau này.</p>
+                        </li>
+                        <li>
+                            <img src="image/no-luc.png" alt="">
+                            <p>Yêu cầu chung : Học viên cần chăm chỉ, tự giác, kiên trì và không ngại khó.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+        <div class="section-five">
+           <div class="container">
+             <div class="inner-box">
+                <h1>Nội dung chi tiết khóa học</h1>
+                <p>Khóa học gồm 10 buổi.</p>
+
+                <p>Các contest trong khóa học được chuẩn bị và sử dụng nền tảng chấm bài tự động của Hackerrank để các bạn có thể nộp lời giải và tự đánh giá kết quả. Khóa học với 17 contest gồm 550 bài tập Java và 90 bài tập SQL được chuẩn bị kỹ lưỡng là một trong những yếu tố nâng cao chất lượng giảng dạy. Toàn bộ bài tập trong contest sẽ được giáo viên giải chi tiết.</p>
+                    
+                <p> Các contest trong khóa học được chuẩn bị và sử dụng nền tảng chấm bài tự động của Hackerrank để các bạn có thể nộp lời giải và tự đánh giá kết quả. Khóa học với 16 contest gồm 470 bài tập được chuẩn bị kỹ lưỡng là một trong những yếu tố nâng cao chất lượng giảng dạy. Toàn bộ bài tập trong contest sẽ được giáo viên giải chi tiết.</p>
+                
+                    
+                <p>Thời gian học : có thể học bất cứ mọi nơi</p>
+                    
+                <p> Hình thức học: Học qua website IT-PLUS</p>
+                    
+                <p>Số lượng contest : 16</p>
+                    
+                <p>Số lượng bài tập: 550 bài tập Java và 90 bài tập SQL</p>
+                <div class="box">
+                    <ul>
+                        <li class="title">Buổi 1</li>
+                        <li class="desc">
+                            <p>-Hướng dẫn sử dụng IDE</p>
+                            <p>-Kiểu dữ liệu và Biến trong Java</p>
+                            <p>-Toán tử trong Java</p>
+                            <p>-Các hàm toán học phổ biến</p>
+                            <p>-Hướng dẫn làm contesst và các lỗi phổ biến làm bài trên Hackerrank</p>
+                        </li>
+                        <li class="title">Buổi 2</li>
+                        <li class="desc">
+                            <p>-Hướng dẫn giải contest 0</p>
+                            <p>-Cấu trúc rẽ nhánh : If else, switch -case</p>
+                            <p>-Bảng mã ASCII</p>
+                            <p>-Contest 1 - Kiểu dữ liệu, toán tử, rẽ nhánh (45 bài tập)</p>
+                           
+                        </li>
+                        <li class="title">Buổi 3</li>
+                        <li class="desc">
+                         
+                            <p>-Hướng dẫn contest 1</p>
+                            <p>-Vòng lặp For, While , Do While</p>
+                            <p>-Vòng lặp for lồng nhau</p>
+                            <p>-Dạng bài tập liên quan tới vẽ hình bằng vòng lặp</p>
+                            <p>-Phạm vi của biến</p>
+                            <p>-Define, Typedef, Using trong Java</p>
+                            <P>-Các hệ đếm phổ biến trong máy tính</P>
+                        </li>
+                        <li class="title">Buổi 4</li>
+                            <p>-Lý thuyết số và tổ hợp phần 1: Số nguyên tố, Số chính phương,Số thuận nghịch, Phân tích thừa số nguyên tố, Số hoàn hảo, Tính tổng ước, Đếm ước của số nguyên, Lý thuyết đồng dư, Ước chung lớn nhất, bội chung nhỏ nhất…</p>
+                        </li>
+                        <li class="title">Buổi 5</li>
+                       
+                        <li class="desc">
+                            <p>-Mảng 1 chiều</p>
+                            <p>-Kiến thức về mảng 1 chiều</p>
+                            <p>-Range-based for loop trong Java</p>
+                            <p>-Các bài toán cơ bản trong mảng 1 chiều</p>
+                            <p>-Vector, Interator, auto, pair trong Java</p>
+
+                        </li>
+                        <li class="title">Buổi 6</li>
+                        <li class="desc">
+                            <p>-Mảng 2 chiều và các dạng bài tập cơ bản</p>
+                            <p>-Các khái niệm và phép toán trên ma trận</p>
+                            <p>-Kỹ thuật loang trên mảng 2 chiều</p>
+                            <p>-Contest 3: Mảng 2 chiều</p>
+                        </li>
+                        <li class="title">Buổi 7</li>
+                        <li class="desc">
+                            <p>-Mảng kí tự</p>
+                            <p>-Xâu kí tự  (String) trong Java</p>
+                            <p>-Các bài toán thường gặp với String</p>
+                            <p>-Contest 4: Xâu kí tự </p>
+                        </li>
+                        <li class="title">Buổi 8</li>
+                        <li class="desc">
+                            
+                            <p>-Lập trình hướng đối tượng</p>
+                            <p>-Các khái niệm cơ bản trong lập trình hướng đối tượng</p>
+                            <p>-Nạp chông toán tử, hàm bạn , lớp bạn, static keyword</p>
+                            <p>-Contest 5: Lớp và đối tượng</p>
+                        </li>
+                        <li class="title">Buổi 9</li>
+                        <li class="desc">
+                            <p>-Hướng dẫn làm bài tập contest 5 </p>
+                            <p>-Kế thừa và đa hình trong Java</p>
+                            <p>-Hàm ảo</p>
+                        </li>
+                        <li class="title">Buổi 10</li>
+                        <li class="desc">
+                            <p>-Xử lí file trong Java</p>
+                            <p>-Tổng kết khóa học và định hướng học tập</p>
+                        </li>
+                    </ul>
+                </div>
+             </div>
+           </div>
+        </div>
+        <div class="section-six">
+            <div class="container">
+                <div class="inner-box">
+                    <div class="row d-flex">
+                        <div class="col-6 box-left" >
+                            <h1>Lý do bạn nên học lập trình Java-SQL ?</h1>
+                            <p><i class="fa-solid fa-check"></i> Truy vấn dữ liệu sử dụng SQL là kỹ năng cơ bản mà mọi lập trình viên cần nắm vững. Ví dụ khi bạn là backend developer, khả năng sử dụng SQL là yêu cầu bắt buộc.</p>
+                            <p><i class="fa-solid fa-check"></i> SQL là ngôn ngữ khá đơn giản và dễ học nhưng chúng lại giúp bạn hiểu rõ hơn về cách thức hoạt động của các ứng dụng trong thực tế.</p>
+                            <p><i class="fa-solid fa-check"></i> Dữ liệu trong kỷ nguyên Big Data hiện nay có vai trò vô cùng quan trọng và xuất hiện ở mọi nơi, SQL giúp bạn thao tác với dữ liệu dễ dàng hơn rất nhiều.</p>
+                            
+                        </div>
+                        <div class="col-6 box-right">
+                            <img src="image/education-img.png" alt="Edu" class="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-eight">
+            <div class="container">
+                <div class="inner-left">
+                    <h1>Cơ quan chủ quản: Công ty Cổ phần Đầu tư và Dịch vụ Giáo dục</h1>
+                    <h1>Địa chỉ:</h1>
+                    <h1>- Văn phòng Hà Nội: Tầng 4, Tòa nhà 25T2, Đường Nguyễn Thị Thập, Phường Trung Hoà, Quận Cầu Giấy, Hà Nộ</h1>
+                    <h1>- Văn phòng TP.HCM: 13M đường số 14 khu đô thị Miếu Nổi, Phường 3, Quận Bình Thạnh, TP. Hồ Chí Minh</h1>
+                    <h1> Hotline: 19006933 – Email: hotro@itplus.vn</h1>
+                    <h1>Chịu trách nhiệm nội dung: Lê Văn A</h1>
+                    
+                </div>
+                
+            </div>
+           <div class="img">
+            <img src="image/congthuong.png" alt="img">
+           </div>
+        </div>
+        <script>
+            var up=document.querySelector("#up");
+            var down=document.querySelector("#down");
+            var table=document.querySelector("#table");
+             
+            down.onclick = function(){
+                down.classList.remove("show");
+                up.classList.add("show");
+                table.classList.add("show");
+
+            }
+            up.onclick = function(){
+                up.classList.remove("show");
+                down.classList.add("show");
+                table.classList.remove("show");
+            }
+        </script>
+    </body>
+    
+</html>
+

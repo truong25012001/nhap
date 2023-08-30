@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: thuctap.UserRepositoryTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.401 s <<< FAILURE! - in thuctap.UserRepositoryTests
+thuctap.UserRepositoryTests  Time elapsed: 0.401 s  <<< ERROR!
+java.lang.IllegalStateException: Found multiple @SpringBootConfiguration annotated classes [Generic bean: class [thuctap.ThuctapApplicationTests]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in file [D:\Java_code\thuctap\target\test-classes\thuctap\ThuctapApplicationTests.class], Generic bean: class [thuctap.ThuctapApplication]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in file [D:\Java_code\thuctap\target\classes\thuctap\ThuctapApplication.class]]
+

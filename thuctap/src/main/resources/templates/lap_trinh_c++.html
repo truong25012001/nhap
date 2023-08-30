@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IT-PLUS</title>
+        <link rel="stylesheet" th:href="@{/css/lap_trinh_c++.css}">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+            
+                <div class="img">
+                    <a href="">
+                        <img src="image/logo3.png" alt="Img">
+                    </a>
+                </div>
+                <div class="inner-menu">
+                    <ul>
+                        <li>
+                            <a th:href="@{/trangchu}">
+                                Trang chủ
+                            </a>
+                        </li>
+                        <li >
+                            <a href="">
+                                Khóa học online
+                            </a>
+                            <i class="fa-solid fa-chevron-down down show" id="down" ></i>
+                            <i class="fa-solid fa-chevron-up up" id="up"></i>
+                           
+                        </li>
+                       
+                    </ul>
+                    <table id="table" >
+                        <tr>
+                            <td>
+                                <a th:href="@{/lap_trinh_c++}">
+                                    Lập trình C++
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a th:href="@{/lap_trinh_python}">
+                                    Lập trình Python
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a th:href="@{/lap_trinh_java}">
+                                    Lập trình Java
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                
+               
+                <a th:href="@{/member}" class="user">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+            
+            </div>
+        </header>
+        <div class="section-one">
+            <div class="container">
+                <div class="inner-box">
+                    <div class="row">
+                        <div class="col-lg-7">
+                        <div class="inner-left">
+                                <p>Khóa học : Lập trình C++ cơ bản</p>
+                                <h1>Giảng viên : Lê Văn A</h1>
+                                <img src="image/c-plus-plus.png" alt="C++">
+                        </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="inner-right">
+                                <ul>
+                                    <li class="title">Giá gốc:</li>
+                                    <li class="desc">4.000.000đ</li>
+                                </ul>
+                                <ul>
+                                    <li class="title">Giá ưu đãi:</li>
+                                    <li class="desc">2.200.000đ (Giảm tới 45%)</li>
+                                </ul>
+                            
+                                <ul>
+                                    <li class="title">Ngày khai giảng:</li>
+                                    <li class="desc">30/4/2023</li>
+                                </ul>
+                                <a href="" class="button">Đăng kí ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-two">
+            <div class="container">
+                <div class="inner-box">
+                    <span>Mục tiêu khóa học</span>
+                    <h1><img src="image/section-title-shape.png" alt=""></h1>
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="image/event-img-5.png" alt="img">
+                        </div>
+                        <div class="col-3">
+                            <div class="box-top">
+                                <img src="image/c++.png" alt="">
+                                <h1>Nắm vững ngôn ngữ</h1>
+                                <p>Nắm vững ngôn ngữ lập trình C++ từ cơ bản tới nâng cao và cải thiện coding skill.</p>
+                            </div>
+                            <div class="box-bottom">
+                                <img src="image/thanh-thao.png" alt="">
+                                <h1>Thành thạo và vận dụng thực tế</h1>
+                                <p>Thành thạo kiến thức về lập trình Hướng Đối Tượng và vận dụng kiến thức này để giải quyết các bài toán thực tế.</p>
+                            </div>
+
+                        </div>
+                        <div class="col-3">
+                            <div class="box-top">
+                                <img src="image/tu-duy.png" alt="">
+                                <h1>Nền tảng vững chắc</h1>
+                                <p>Đạt được nền tảng kỹ thuật lập trình cực kì vững chắc và tư duy trong việc giải quyết vấn đề.</p>
+                            </div>
+                            <div class="box-bottom">
+                                <img src="image/thuat-toan.png" alt="">
+
+                                <h1>Nắm vững thuật toán</h1>
+                                <p>Nắm vững tư tưởng và áp dụng thành thạo các thuật toán như sắp xếp, tìm kiếm, sinh, quay lui nhánh cận và tham lam. Các cấu trúc dữ liệu như set, map, ngăn xếp, hàng đợi, danh sách liên kết, cây nhị phân.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-three">
+            <div class="container">
+                <div class="inner-box">
+                    <h1>Kết quả đạt được sau khi bạn</h1>
+                    <h2>Hoàn thành khóa học</h2>
+                    <ul>
+                        <li>
+                            <div class="row">
+                                <div class="col-4 d-flex">
+                                    <div class="box-top">
+                                        <img src="image/tu-duy.png" alt="">
+                                        <h1>Nền tảng vững chắc</h1>
+                                        <p>Đạt được nền tảng kỹ thuật lập trình cực kì vững chắc.</p>
+                                    </div>
+                                </div>
+                                <div class="col-4 d-flex">
+                                    <div class="box-top">
+                                        <img src="image/kien-thuc.png" alt="">
+                                        <h1>Kiến thức hoàn thiện</h1>
+                                        <p>Có được kiến thức hoàn thiện về ngôn ngữ lập trình C++ và lập trình Hướng Đối Tượng, nền tảng cho bạn tiếp cận với các ngôn ngữ như Java, PHP, Python sau này trở nên dễ dàng hơn.</p>
+                                    </div>
+                                </div>
+                                <div class="col-4 d-flex">
+                                    <div class="box-top">
+                                        <img src="image/thuat-toan.png" alt="">
+                                        <h1>Phân tích và giải quyết bài toán</h1>
+                                        <p>Nhanh chóng tìm ra phương pháp giải quyết bài toán, cách phân tích thuật toán cũng như cấu trúc dữ liệu phù hợp với từng bài toán cụ thể.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-4 d-flex">
+                                    <div class="box-bottom">
+                                        <img src="image/thanh-thao.png" alt="">
+                                        <h1>kỸ năng thành thạo</h1>
+                                        <p>Có kỹ năng cài đặt thuật toán thành thạo, nhanh chóng tiếp cận với các công nghệ mới trong tương lai.</p>
+                                    </div>
+                                </div>
+                                <div class="col-4 d-flex">
+                                    <div class="box-bottom">
+                                        <img src="image/phong-van.png" alt="">
+                                        <h1>Áp dụng đi phỏng vấn</h1>
+                                        <p>Đáp ứng mọi nhu cầu về tư duy logic, các vòng phòng vấn về giải thuật với các nhà tuyển dụng.</p>
+                                    </div>
+                                </div>
+                                <div class="col-4 d-flex">
+                                    <div class="box-bottom">
+                                        <img src="image/kinh-nghiem.png" alt="">
+                                        <h1>Kinh nghiệm giải quyết bài toán</h1>
+                                        <p>Có kinh nghiệm giải bài tập trên các nền tảng chấm bài online tự động như Codeforces, Hackerrank, SPOJ. Đây một bước chuẩn bị vững vàng với các bạn theo đuổi lập trình thi đấu hoặc đam mê với thuật toán.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="section-four">
+            <div class="container">
+                <div class="inner-box">
+                    <h1>Đối tượng có thể tham gia khóa học</h1>
+                    <ul>
+                        <li>
+                            <img src="image/bat-dau.png" alt="">
+                            <p>Các bạn chưa biết gì về lập trình mong muốn bắt đầu học lập trình từ đầu.</p>
+                        </li>
+                        <li>
+                            <img src="image/lap-trinh-vien.png" alt="">
+                            <p>Các bạn chuyển ngành sang học Công nghệ thông tin chưa có định hướng rõ ràng về những kiến thức cần học để có thể tìm được một công việc trong ngành IT</p>
+                        </li>
+                        <li>
+                            <img src="image/kien-thuc.png" alt="">
+                            <p>Các bạn sinh viên đã từng học lập trình nhưng vẫn chưa có kiến thức lập trình vững chắc cần trau dồi kiến thức về lập trình</p>
+                        </li>
+                        <li>
+                            <img src="image/hoc-sinh.png" alt="">
+                            <p>Các bạn học sinh trung học phổ thông mong muốn tiếp cận sớm với lập trình để tham gia đội tuyển học sinh giỏi Tin học.</p>
+                        </li>
+                        <li>
+                            <img src="image/no-luc.png" alt="">
+                            <p>Yêu cầu chung : Các bạn ham học hỏi, chăm chỉ, kiên trì và không ngại hỏi đáp cũng như đưa ra các thắc mắc trong quá trình học tập.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+        <div class="section-five">
+           <div class="container">
+             <div class="inner-box">
+                <h1>Nội dung chi tiết khóa học</h1>
+                <p>Khóa học gồm 10 buổi.</p>
+
+                <p>Khóa học dành cho các bạn sinh viên CNTT muốn học từ cơ bản tới nâng cao và các bạn học sinh muốn bắt đầu học lập trình để tham gia các kì thi học sinh giỏi tin học. Khóa học C++ từ cơ bản tới nâng cao này phù hợp với những bạn muốn học chậm và chi tiết hơn cũng như có nhiều thời gian hơn mỗi tuần để làm bài tập.</p>
+                    
+                <p> Các contest trong khóa học được chuẩn bị và sử dụng nền tảng chấm bài tự động của Hackerrank để các bạn có thể nộp lời giải và tự đánh giá kết quả. Khóa học với 16 contest gồm 470 bài tập được chuẩn bị kỹ lưỡng là một trong những yếu tố nâng cao chất lượng giảng dạy. Toàn bộ bài tập trong contest sẽ được giáo viên giải chi tiết.</p>
+                
+                    
+                <p>Thời gian học : có thể học bất cứ mọi nơi</p>
+                    
+                <p> Hình thức học: Học qua website IT-PLUS</p>
+                    
+                <p>Số lượng contest : 16</p>
+                    
+                <p>Số lượng bài tập : 470</p>
+                <div class="box">
+                    <ul>
+                        <li class="title">Buổi 1</li>
+                        <li class="desc">
+                            <p>-Hướng dẫn sử dụng IDE</p>
+                            <p>-Kiểu dữ liệu và Biến trong c++</p>
+                            <p>-Toán tử trong C++</p>
+                            <p>-Các hàm toán học phổ biến</p>
+                            <p>-Hướng dẫn làm contesst và các lỗi phổ biến làm bài trên Hackerrank</p>
+                        </li>
+                        <li class="title">Buổi 2</li>
+                        <li class="desc">
+                            <p>-Hướng dẫn giải contest 0</p>
+                            <p>-Cấu trúc rẽ nhánh : If else, switch -case</p>
+                            <p>-Bảng mã ASCII</p>
+                            <p>-Contest 1 - Kiểu dữ liệu, toán tử, rẽ nhánh (45 bài tập)</p>
+                           
+                        </li>
+                        <li class="title">Buổi 3</li>
+                        <li class="desc">
+                         
+                            <p>-Hướng dẫn contest 1</p>
+                            <p>-Vòng lặp For, While , Do While</p>
+                            <p>-Vòng lặp for lồng nhau</p>
+                            <p>-Dạng bài tập liên quan tới vẽ hình bằng vòng lặp</p>
+                            <p>-Phạm vi của biến</p>
+                            <p>-Define, Typedef, Using trong C ++</p>
+                            <P>-Các hệ đếm phổ biến trong máy tính</P>
+                        </li>
+                        <li class="title">Buổi 4</li>
+                            <p>-Lý thuyết số và tổ hợp phần 1: Số nguyên tố, Số chính phương,Số thuận nghịch, Phân tích thừa số nguyên tố, Số hoàn hảo, Tính tổng ước, Đếm ước của số nguyên, Lý thuyết đồng dư, Ước chung lớn nhất, bội chung nhỏ nhất…</p>
+                        </li>
+                        <li class="title">Buổi 5</li>
+                       
+                        <li class="desc">
+                            <p>-Mảng 1 chiều</p>
+                            <p>-Kiến thức về mảng 1 chiều</p>
+                            <p>-Range-based for loop trong C++11</p>
+                            <p>-Các bài toán cơ bản trong mảng 1 chiều</p>
+                            <p>-Vector, Interator, auto, pair trong C++</p>
+
+                        </li>
+                        <li class="title">Buổi 6</li>
+                        <li class="desc">
+                            <p>-Mảng 2 chiều và các dạng bài tập cơ bản</p>
+                            <p>-Các khái niệm và phép toán trên ma trận</p>
+                            <p>-Kỹ thuật loang trên mảng 2 chiều</p>
+                            <p>-Contest 3: Mảng 2 chiều</p>
+                        </li>
+                        <li class="title">Buổi 7</li>
+                        <li class="desc">
+                            <p>-Mảng kí tự</p>
+                            <p>-Xâu kí tự  (String) trong C++</p>
+                            <p>-Các bài toán thường gặp với String</p>
+                            <p>-Contest 4: Xâu kí tự </p>
+                        </li>
+                        <li class="title">Buổi 8</li>
+                        <li class="desc">
+                            
+                            <p>-Lập trình hướng đối tượng</p>
+                            <p>-Các khái niệm cơ bản trong lập trình hướng đối tượng</p>
+                            <p>-Nạp chông toán tử, hàm bạn , lớp bạn, static keyword</p>
+                            <p>-Contest 5: Lớp và đối tượng</p>
+                        </li>
+                        <li class="title">Buổi 9</li>
+                        <li class="desc">
+                            <p>-Hướng dẫn làm bài tập contest 5 </p>
+                            <p>-Kế thừa và đa hình trong C++</p>
+                            <p>-Hàm ảo</p>
+                        </li>
+                        <li class="title">Buổi 10</li>
+                        <li class="desc">
+                            <p>-Xử lí file trong C++</p>
+                            <p>-Tổng kết khóa học và định hướng học tập</p>
+                        </li>
+                    </ul>
+                </div>
+             </div>
+           </div>
+        </div>
+        <div class="section-six">
+            <div class="container">
+                <div class="inner-box">
+                    <div class="row d-flex">
+                        <div class="col-6 box-left" >
+                            <h1>Lý do bạn nên học lập trình C++ ?</h1>
+                            <p><i class="fa-solid fa-check"></i> Ngôn ngữ lập trình C++ vừa là ngôn ngữ hướng thủ tục và cũng là ngôn ngữ lập trình hướng đối tượng.</p>
+                            <p><i class="fa-solid fa-check"></i> Tốc độ thực thi nhanh, thư viện STL với các thuật toán và cấu trúc dữ liệu được cài đặt sẵn là lí do C++ là lựa chọn số một trong các cuộc thi về lập trình.</p>
+                            <p><i class="fa-solid fa-check"></i> Hầu hết các sinh viên IT tại Việt Nam đều học môn ngôn ngữ lập trình C++ tại trường đại học</p>
+                            <p><i class="fa-solid fa-check"></i> C++ được coi là một ngôn ngữ lập trình khó, do đó khi bạn đã thành thạo C++ thì việc học các ngôn ngữ khác sẽ trở nên dễ dàng hơn rất nhiều</p>
+                        </div>
+                        <div class="col-6 box-right">
+                            <img src="image/education-img.png" alt="Edu" class="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-eight">
+            <div class="container">
+                <div class="inner-left">
+                    <h1>Cơ quan chủ quản: Công ty Cổ phần Đầu tư và Dịch vụ Giáo dục</h1>
+                    <h1>Địa chỉ:</h1>
+                    <h1>- Văn phòng Hà Nội: Tầng 4, Tòa nhà 25T2, Đường Nguyễn Thị Thập, Phường Trung Hoà, Quận Cầu Giấy, Hà Nộ</h1>
+                    <h1>- Văn phòng TP.HCM: 13M đường số 14 khu đô thị Miếu Nổi, Phường 3, Quận Bình Thạnh, TP. Hồ Chí Minh</h1>
+                    <h1> Hotline: 19006933 – Email: hotro@itplus.vn</h1>
+                    <h1>Chịu trách nhiệm nội dung: Lê Văn A</h1>
+                    
+                </div>
+                
+            </div>
+           <div class="img">
+            <img src="image/congthuong.png" alt="img">
+           </div>
+        </div>
+        <script>
+            var up=document.querySelector("#up");
+            var down=document.querySelector("#down");
+            var table=document.querySelector("#table");
+             
+            down.onclick = function(){
+                down.classList.remove("show");
+                up.classList.add("show");
+                table.classList.add("show");
+
+            }
+            up.onclick = function(){
+                up.classList.remove("show");
+                down.classList.add("show");
+                table.classList.remove("show");
+            }
+        </script>
+    </body>
+    
+</html>
+

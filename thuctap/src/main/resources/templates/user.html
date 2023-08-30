@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IT-PLUS</title>
+        <link rel="stylesheet" th:href="@{/css/lap_trinh_c++.css}">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+            
+                <div class="img">
+                    <a href="">
+                        <img th:src="@{image/logo3.png}" alt="Img">
+                    </a>
+                </div>
+                <div class="inner-menu">
+                    <ul>
+                        <li>
+                            <a th:href="@{/}">
+                                Trang chủ
+                            </a>
+                        </li>
+                        <li >
+                            <a href="">
+                                Khóa học online
+                            </a>
+                            <i class="fa-solid fa-chevron-down down show" id="down" ></i>
+                            <i class="fa-solid fa-chevron-up up" id="up"></i>
+                           
+                        </li>
+                        <!-- <li class="box">
+                            <ul class="inner-box">
+                               <li><i class="fa-solid fa-chevron-down"></i></li>
+                                <li>
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <a href="">
+                                                    Lập trình C++
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="">
+                                                    Lập trình Python
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="">
+                                                    Lập trình Java
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </li>
+                            </ul>
+                        
+                        </li> -->
+                        <!-- <li>
+                            <a href="">
+                                Khóa học của tôi
+                            </a>
+                        </li> -->
+                    </ul>
+                    <table id="table" >
+                        <tr>
+                            <td>
+                                <a th:href="@{/lap_trinh_c++}">
+                                    Lập trình C++
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a th:href="@{/member}">
+                                    Lập trình Python
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="">
+                                    Lập trình Java
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                
+               
+                <a th:href="@{/member}" class="user">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+            
+            </div>
+        </header>
+       
+        
+        <div class="section-one">
+            <div class="container">
+                <div class="inner-box">
+                    <div class="row">
+                        <div class="col-lg-7">
+                        <div class="inner-left">
+                                <p>Khóa học : Lập trình C++ cơ bản</p>
+                                <h1>Giảng viên : Lê Văn A</h1>
+                                <img src="/image/c-plus-plus.png" alt="C++">
+                        </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="inner-right">
+                                <ul>
+                                    <li class="title">Giá gốc:</li>
+                                    <li class="desc">4.000.000đ</li>
+                                </ul>
+                                <ul>
+                                    <li class="title">Giá ưu đãi:</li>
+                                    <li class="desc">2.200.000đ (Giảm tới 45%)</li>
+                                </ul>
+                            
+                                <ul>
+                                    <li class="title">Ngày khai giảng:</li>
+                                    <li class="desc">30/4/2023</li>
+                                </ul>
+                                <a href="" class="button">Đăng kí ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-two">
+            <div class="container">
+                <div class="inner-box">
+                    <span>Mục tiêu khóa học</span>
+                    <h1><img src="image/section-title-shape.png" alt=""></h1>
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="image/event-img-5.png" alt="img">
+                        </div>
+                        <div class="col-3">
+                            <div class="box-top">
+                                <img src="image/c++.png" alt="">
+                                <h1>Nắm vững ngôn ngữ</h1>
+                                <p>Nắm vững ngôn ngữ lập trình C++ từ cơ bản tới nâng cao và cải thiện coding skill.</p>
+                            </div>
+                            <div class="box-bottom">
+                                <img src="image/thanh-thao.png" alt="">
+                                <h1>Thành thạo và vận dụng thực tế</h1>
+                                <p>Thành thạo kiến thức về lập trình Hướng Đối Tượng và vận dụng kiến thức này để giải quyết các bài toán thực tế.</p>
+                            </div>
+
+                        </div>
+                        <div class="col-3">
+                            <div class="box-top">
+                                <img src="image/tu-duy.png" alt="">
+                                <h1>Nền tảng vững chắc</h1>
+                                <p>Đạt được nền tảng kỹ thuật lập trình cực kì vững chắc và tư duy trong việc giải quyết vấn đề.</p>
+                            </div>
+                            <div class="box-bottom">
+                                <img src="image/thuat-toan.png" alt="">
+
+                                <h1>Nắm vững thuật toán</h1>
+                                <p>Nắm vững tư tưởng và áp dụng thành thạo các thuật toán như sắp xếp, tìm kiếm, sinh, quay lui nhánh cận và tham lam. Các cấu trúc dữ liệu như set, map, ngăn xếp, hàng đợi, danh sách liên kết, cây nhị phân.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-three">
+            <div class="container">
+                <div class="inner-box">
+                    <h1>Kết quả đạt được sau khi bạn</h1>
+                    <h2>Hoàn thành khóa học</h2>
+                    <ul>
+                        <li>
+                            <div class="row">
+                                <div class="col-4 d-flex">
+                                    <div class="box-top">
+                                        <img src="image/tu-duy.png" alt="">
+                                        <h1>Nền tảng vững chắc</h1>
+                                        <p>Đạt được nền tảng kỹ thuật lập trình cực kì vững chắc.</p>
+                                    </div>
+                                </div>
+                                <div class="col-4 d-flex">
+                                    <div class="box-top">
+                                        <img src="image/kien-thuc.png" alt="">
+                                        <h1>Kiến thức hoàn thiện</h1>
+                                        <p>Có được kiến thức hoàn thiện về ngôn ngữ lập trình C++ và lập trình Hướng Đối Tượng, nền tảng cho bạn tiếp cận với các ngôn ngữ như Java, PHP, Python sau này trở nên dễ dàng hơn.</p>
+                                    </div>
+                                </div>
+                                <div class="col-4 d-flex">
+                                    <div class="box-top">
+                                        <img src="image/thuat-toan.png" alt="">
+                                        <h1>Phân tích và giải quyết bài toán</h1>
+                                        <p>Nhanh chóng tìm ra phương pháp giải quyết bài toán, cách phân tích thuật toán cũng như cấu trúc dữ liệu phù hợp với từng bài toán cụ thể.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-4 d-flex">
+                                    <div class="box-bottom">
+                                        <img src="image/thanh-thao.png" alt="">
+                                        <h1>kỸ năng thành thạo</h1>
+                                        <p>Có kỹ năng cài đặt thuật toán thành thạo, nhanh chóng tiếp cận với các công nghệ mới trong tương lai.</p>
+                                    </div>
+                                </div>
+                                <div class="col-4 d-flex">
+                                    <div class="box-bottom">
+                                        <img src="image/phong-van.png" alt="">
+                                        <h1>Áp dụng đi phỏng vấn</h1>
+                                        <p>Đáp ứng mọi nhu cầu về tư duy logic, các vòng phòng vấn về giải thuật với các nhà tuyển dụng.</p>
+                                    </div>
+                                </div>
+                                <div class="col-4 d-flex">
+                                    <div class="box-bottom">
+                                        <img src="image/kinh-nghiem.png" alt="">
+                                        <h1>Kinh nghiệm giải quyết bài toán</h1>
+                                        <p>Có kinh nghiệm giải bài tập trên các nền tảng chấm bài online tự động như Codeforces, Hackerrank, SPOJ. Đây một bước chuẩn bị vững vàng với các bạn theo đuổi lập trình thi đấu hoặc đam mê với thuật toán.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- <div class="section-four">
+            <h1>xin chào</h1>
+            <h3>lap trinh c</h3>
+            <div class="row">
+                <div class="col-4">
+                    1
+                </div>
+                <div class="col-4">
+                    1
+                </div>
+                
+            </div>
+            
+        </div> -->
+        <script>
+            var up=document.querySelector("#up");
+            var down=document.querySelector("#down");
+            var table=document.querySelector("#table");
+             
+            down.onclick = function(){
+                down.classList.remove("show");
+                up.classList.add("show");
+                table.classList.add("show");
+
+            }
+            up.onclick = function(){
+                up.classList.remove("show");
+                down.classList.add("show");
+                table.classList.remove("show");
+            }
+        </script>
+    </body>
+    
+</html>
+

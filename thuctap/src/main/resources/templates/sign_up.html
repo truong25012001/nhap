@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" th:href="@{/css/sign_up.css}">
+<head>
+    <title>Đăng ký</title>
+</head>
+<body>
+    <form  th:action="@{/process_register}"  method="post"  th:object="${user}">
+        <div class="container">
+            <h1>Form Đăng Ký</h1>
+            
+            
+           
+            <label for="email"><b>Email</b></label>
+            </br>
+            <input type="email" placeholder="Nhập Email" th:field="*{email}" required />
+           
+            </br>
+            <label for="name"><b>Name: </b></label>
+            </br>
+            <input type="text" th:field="*{name}" class="form-control" required placeholder="Name"/>
+            </br>
+            <label for="psw"><b>Mật Khẩu</b></label>
+            </br>
+            <input type="password" placeholder="Nhập Mật Khẩu" th:field="*{password}"  required />
+            
+            <label for="adress"><b>Adress: </b></label>
+           </br>
+           <input type="text" th:field="*{adress}" class="form-control" required placeholder="Adress"/>
+           
+ 
+           <p style="color : red" th:text="${Error}"></p>
+           
+            <div class="clearfix">
+                <button type="submit" class="signupbtn">Sign Up</button>
+            </div>
+            
+        </div>
+    </form>
+    
+</body>
+</html>
